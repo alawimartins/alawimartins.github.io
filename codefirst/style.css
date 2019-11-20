@@ -1,0 +1,190 @@
+body {
+  background-color: #faffff
+}
+
+
+svg.map {
+  transform: scale(1.2);
+  transform-origin: center center;
+}
+.background-map {
+  overflow: hidden;
+  height: calc(100% - 64px);
+}
+.scroller {
+  overflow: auto;
+  height: 100%;
+}
+.about {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  font-family: 'Raleway', sans-serif;
+  background-color: #faffff;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.paragraph {
+  font-family: 'Raleway', sans-serif;
+  background-color: teal;
+  padding-top: 15px;
+  padding-left: 125px;
+  padding-right: 125px;
+  padding-bottom: 15px;
+  text-align: center;
+  font-size: 22px;
+  color: white;
+}
+.h1 {
+  font-weight: bold;
+  font-size: 66px;
+}
+.h2 {
+  font-weight: bold;
+  font-size: 46px;
+}
+
+#stations text:hover {
+  opacity: .65;
+  font-size: 17px;
+  cursor: pointer;
+}
+#Oval:hover {
+  cursor: pointer;
+}
+
+#lines-active path {
+  opacity: .5;
+}
+#lines-active path:hover {
+  opacity: 1;
+}
+#Oval circle {
+  transform: scale(2);
+  transform-origin: 7px 7px;
+}
+
+#stations g:hover circle:first-child {
+  stroke: #ff0000;
+}
+
+svg  text {
+  font-family: inherit!important;
+  /* font-size: 20px; */
+}
+  circle {
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-name: ovalpulse;
+    animation-iteration-count: infinite;
+
+    /* animation-direction: alternate; */
+  }
+@keyframes ovalpulse {
+  from {
+    transform: scale(1);
+    opacity: 1;
+    stroke: #000000;
+  }
+  to {
+    transform: scale(4);
+    opacity: 0;
+    stroke: #F2980F;
+
+  }
+}
+
+#stations g g circle {
+  transform: scale(2);
+  transform-origin: 7px 7px;
+}
+
+svg #lines-inactive path {
+  animation: fadein 2.5s linear;
+  animation-fill-mode: forwards;
+}
+
+svg #lines-active path {
+  stroke-dasharray: 5000;
+  stroke-dashoffset: 5000;
+  animation: dash 5s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 5000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#hand path {
+    animation: mover 1.2s infinite;
+}
+
+@keyframes mover {
+    0% { transform: translateY(2px); }
+    50% { transform: translateY(-5px); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(2px); }
+}
+#shape path {
+  animation: ClockwiseSpin 1.2s infinite;
+  transform-origin: center;
+}
+
+  @keyframes ClockwiseSpin {
+  	0%  {transform: rotate(180deg);}
+  	50% {transform: rotate(9deg);}
+    50%  {transform: rotate(9deg);}
+    100% {transform: rotate(180deg);}
+
+  }
+
+nav .brand-logo {
+  font-family: 'Monoton', cursive;
+  left:85px;
+  font-size: 2.3rem;
+}
+
+
+nav {
+      height: 75px;
+      line-height: 75px;
+    }
+
+  .title-event {
+    text-align: center;
+  }
+  .flex-container {
+    display: flex;
+  }
+  .box-1{
+    flex-grow:1
+  }
+  .box-image {
+    flex-grow:1
+  }
+  #myImage {
+    margin-right: 30px;
+    box-shadow: 0px 0px 16px -2px rgba(0,0,0,0.05);
+  }
+  #modal1 {
+    box-shadow: 0px 0px 16px 6px rgba(237,237,237,1);
+  }
+  .pStyle {
+    font-size: 20px;
+  }
