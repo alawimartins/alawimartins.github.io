@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/sweettooth/static/css/main.bd7178db.chunk.css",
-    "main.js": "/sweettooth/static/js/main.4a0be0d9.chunk.js",
-    "main.js.map": "/sweettooth/static/js/main.4a0be0d9.chunk.js.map",
+    "main.css": "/sweettooth/static/css/main.ff381f2d.chunk.css",
+    "main.js": "/sweettooth/static/js/main.8f884e22.chunk.js",
+    "main.js.map": "/sweettooth/static/js/main.8f884e22.chunk.js.map",
     "runtime-main.js": "/sweettooth/static/js/runtime-main.3c80d1a1.js",
     "runtime-main.js.map": "/sweettooth/static/js/runtime-main.3c80d1a1.js.map",
     "static/js/2.48e842ab.chunk.js": "/sweettooth/static/js/2.48e842ab.chunk.js",
     "static/js/2.48e842ab.chunk.js.map": "/sweettooth/static/js/2.48e842ab.chunk.js.map",
     "index.html": "/sweettooth/index.html",
-    "precache-manifest.3aa3dec47459ac6ab65cfccd8830c914.js": "/sweettooth/precache-manifest.3aa3dec47459ac6ab65cfccd8830c914.js",
+    "precache-manifest.483509e0c7206505672750d3dbc514a5.js": "/sweettooth/precache-manifest.483509e0c7206505672750d3dbc514a5.js",
     "service-worker.js": "/sweettooth/service-worker.js",
-    "static/css/main.bd7178db.chunk.css.map": "/sweettooth/static/css/main.bd7178db.chunk.css.map",
+    "static/css/main.ff381f2d.chunk.css.map": "/sweettooth/static/css/main.ff381f2d.chunk.css.map",
     "static/js/2.48e842ab.chunk.js.LICENSE.txt": "/sweettooth/static/js/2.48e842ab.chunk.js.LICENSE.txt",
     "static/media/index.css": "/sweettooth/static/media/background.646f826f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3c80d1a1.js",
     "static/js/2.48e842ab.chunk.js",
-    "static/css/main.bd7178db.chunk.css",
-    "static/js/main.4a0be0d9.chunk.js"
+    "static/css/main.ff381f2d.chunk.css",
+    "static/js/main.8f884e22.chunk.js"
   ]
 }

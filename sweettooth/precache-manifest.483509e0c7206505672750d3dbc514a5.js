@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f4b7444acfd05f5b4b53116cd1fdc650",
+    "revision": "03d9b9fb29e051a72caa0d1a62b0563f",
     "url": "/sweettooth/index.html"
   },
   {
-    "revision": "7a1d9b6bcb900c75d40b",
-    "url": "/sweettooth/static/css/main.bd7178db.chunk.css"
+    "revision": "06d57fb24a7d88a7862d",
+    "url": "/sweettooth/static/css/main.ff381f2d.chunk.css"
   },
   {
-    "revision": "e3715e84dbbac1a980c8",
-    "url": "/sweettooth/static/js/2.a907ebb5.chunk.js"
+    "revision": "679f1b17e41b2487ff41",
+    "url": "/sweettooth/static/js/2.48e842ab.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/sweettooth/static/js/2.a907ebb5.chunk.js.LICENSE.txt"
+    "url": "/sweettooth/static/js/2.48e842ab.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7a1d9b6bcb900c75d40b",
-    "url": "/sweettooth/static/js/main.e5e3fc2c.chunk.js"
+    "revision": "06d57fb24a7d88a7862d",
+    "url": "/sweettooth/static/js/main.8f884e22.chunk.js"
   },
   {
     "revision": "9943601e07676e04e6ad",
