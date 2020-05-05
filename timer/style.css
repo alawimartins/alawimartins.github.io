@@ -1,0 +1,372 @@
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    /* background-color: #0b1446; */
+    background: rgb(18,12,128);
+    background: radial-gradient(circle, rgba(18,12,128,1) 20%, rgba(10,14,88,1) 52%);
+    height: 100vh;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+}
+
+
+h3 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.he {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+  
+.firstContainer{
+    display: flex;
+    height: 100vh;
+}
+
+.firstRow {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.firstblock{
+    margin: 0;
+}
+
+.seconds {
+    position: relative;
+    background-color: rgb(33, 170, 33);
+    width: 320px;
+    height: 320px;
+    box-shadow: 0px 0px 22px 4px rgba(0,0,0,0.75);
+    z-index: 1;
+
+
+}
+
+.workOrStop, .sets {
+    background-color: #003399;    ;
+    width: 270px;
+    max-width: 300px;
+    height: 33.33%;
+    position: relative;
+}
+
+svg  {
+    position: relative;
+}
+
+.greyBorder {
+    fill: transparent;
+    stroke: #f0f0f0af;
+    stroke-width: 6;
+    stroke-dasharray: 534;
+    transform-origin: 50% 50%;
+    
+  }
+
+
+
+  .outer   {
+    fill: transparent;
+    stroke: white;
+    stroke-width: 6;
+    stroke-dasharray: 534;
+    transform-origin: 50% 50%;
+    /* animation-duration: 1.4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-name: circle--animation;
+    animation-direction: reverse; */
+    stroke-dashoffset: 534;
+    
+  }
+
+  .circleSvg {
+    transform: rotate(270deg);
+  }
+
+  /* @keyframes circle--animation {
+    from {
+      
+    }
+    
+    to {
+      stroke-dashoffset: 534;
+    }
+  } */
+  
+ 
+
+  
+ .containerParagraph, .setsText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+ }
+  
+
+.workOrStopText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+ }
+
+ .workOrStopText p, .setsText p {
+     margin: 0;
+     top: 20;
+     font-size: 30px;
+     color: white;
+ }
+
+ .workOrStopText p {
+    position: absolute;
+ }
+
+.lapText {
+    position: absolute;
+}
+
+ .signs {
+     fill: white;
+ }
+
+ .heartSvg {
+    animation-name: heart;
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    display: block;
+ }
+
+ 
+
+ @keyframes heart {
+    from {transform: scale(2.7);}
+    to {transform: scale(3.3);}
+    
+  }
+
+  .stopSvg {
+
+    animation-name: stop;
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    display: none;
+    
+ }
+
+ @keyframes stop {
+    from {transform: scale(2.7);}
+    to {transform: scale(3.3);}
+    
+  }
+
+  #timer, #round {
+    font-size: 50px;
+    color: white;
+  }
+
+#stationNumber {
+    height: 400px;
+    width: 100px;
+    background-color: #003399;
+    color: white;
+    box-shadow: 0px 0px 22px 2px rgba(0,0,0,0.75);
+}
+
+#stationNumber {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.imageAndStation {
+    display: flex;
+    position: relative;
+}
+.myImg {
+
+}
+
+#myProgress {
+    width: 100%;
+    background-color: rgb(216, 216, 216);
+    box-shadow: 0px 10px 9px -6px rgba(0,0,0,0.6);
+    border-radius: 20px;
+  }
+
+#myBar {
+    width: 0%;
+    height: 40px;
+    background-color: red;
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 30px; /* To center it vertically */
+    color: white;
+    stroke-dasharray: 50;
+    border-color: rgba(255, 251, 251, 0.73);
+    border-radius: 20px;
+    /* transition: all .8s; */
+  }
+
+
+/* .barDivBorder{
+    position: fixed;
+    bottom: 0;
+    height:50px;
+    background-color: white;
+    width: calc(100% - 270px);
+    left: 270px;
+    
+} */
+
+.barDiv {
+    position: fixed;
+    bottom: 0;
+    
+    width: calc(100% - 270px);
+    left: 270px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    padding: 9px;
+    border-radius: 20px;
+}
+  
+#exerciseType {
+    position: absolute;
+    left: 270px;
+    top: 0;
+    box-shadow: 0px 10px 9px -6px rgba(0,0,0,0.6);
+    width: calc(100% - 270px);
+    padding-left: 40px;
+
+}
+.secondRow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.parentIcons {
+    position:relative;
+
+    
+}
+/* .parentIcons:hover .icons {
+    transition-duration: .7s;
+    transition-timing-function: linear;
+    right: 0px;
+    cursor: pointer;
+} */
+
+.icons {
+    fill:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    margin-left: 100px;
+    box-shadow: 1px 3px 28px 1px rgba(0,0,0,0.73);
+    visibility: hidden;
+    width: 100px;
+    position: relative;
+    background-color: red;
+    margin: 0;
+}
+
+.home a svg {
+text-decoration: none;  
+fill: white;  
+}
+
+.refresh:hover, .play:hover, .paused:hover, .home:hover {
+    opacity: .6; 
+}
+
+.refresh, .play, .paused, .home{
+    transform: scale(2.7);
+    cursor: pointer;
+    
+}
+
+.buttonsLeftRight {
+    position: absolute;
+    top:104%;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+
+}
+
+.buttons {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    background-color: #003399;
+    margin: 0 10px;
+    box-shadow: -2px -1px 40px 1px rgba(0,0,0,0.75);
+
+
+  }
+  
+  .buttons:hover {
+    color: white;
+  }
+  
+  .previous {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  .next {
+    background-color: #f1f1f1;
+    color: white;
+  }
+
+ 
+
+ 
+  /* END Keyframes for the initial animation */
+
+  

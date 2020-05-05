@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="./swiper.min.css" rel="stylesheet" type="text/css">
+    <link href="./home.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- <div class="card">
+        <div class="sliderText">
+            <h3>Slider one</h3>
+        </div>
+        <div class="content">
+            <p>text text text.</p>
+            
+        </div>
+        <a href='#'>read more</a>
+    </div> -->
+    <div class="titleDiv">
+        <h3 id= "title">Choose Your Workout</h3>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url(./images/introjump3.gif)" onclick="goToWorkout('monday')">
+            <div class='sliderText'><p>Monday</p></div>
+          </div>
+          <div class="swiper-slide" style="background-image:url(./images/introjump.gif)" onclick="goToWorkout('tuesday')">
+            <div class='sliderText'><p>Tuesday</p></div>
+          </div>
+          <div class="swiper-slide" style="background-image:url(./images/introjump1.gif)" onclick="goToWorkout('wednesday')">
+            <div class='sliderText'><p>Wednesday</p></div>
+          </div>
+            <div class="swiper-slide" style="background-image:url(./images/introjump2.gif)" onclick="goToWorkout('thursday')">
+              <div class='sliderText'><p>Thursday</p></div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(./images/introjump4.gif)" onclick="goToWorkout('friday')">
+              <div class='sliderText'><p>Friday</p></div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(./images/introjump5.gif)" onclick="goToWorkout('saturday')">
+              <div class='sliderText'><p>Saturday</p></div>
+            </div>
+     
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+  
+    <a href="./index.html?day=tuesday"></a>
+
+    <script src="./swiper.min.js"></script>
+
+<script>
+    function goToWorkout (id) {
+        window.location.href = `./index.html?day=${id}`;
+    }
+    const swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      loop: true,
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+
+    
+   
+
+
+  
+</script>
+</body>
+</html>
